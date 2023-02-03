@@ -22,9 +22,10 @@ for index, (key, value) in enumerate(tqdm(tasks_structure.items())):
     df["formula"] = formula
     # del df['structure']
     df = df.rename({value: "target"}, axis=1)
+    df["cif"] = df.structure.apply(lambda x: x.to(fmt="cif"))
     df[["formula", "target"]].to_csv(f"matbench_datasets/{key}.csv", index=False)
     with open(f"matbench_datasets/{key}_structures.pkl", "wb") as f:
-        pickle.dump(df[["structure", "target"]], f)
+        pickle.dump(df[["cif", "target"]], f)
 
 
 # Download datasets from Matbench that's input is 'composition'.
@@ -47,9 +48,9 @@ for index, (key, value) in enumerate(tasks_composition.items()):
     del df["composition"]
     df = df.rename({value: "target"}, axis=1)
     df = df[["formula", "target"]]
-    df.to_csv("matbench_datasets/{}.csv".format(key), index=False)
+    df.to_csv(f"matbench_datasets/{key}.csv", index=False)
 
-1+1
+1 + 1
 
 # %% Code Graveyard
 
