@@ -4,3 +4,7 @@ matbench_datasets/matbench_*_robocrys_features.pkl
 matbench_datasets/matbench_*_robocrys_features.csv
 training/secrets.json
 matbench_datasets/jobs/*_robofeat_jobs.pkl
+matbench_datasets/jobs/*_robofeat_results.pkl
+matbench_datasets/matbench_expt_is_metal.csv
+matbench_datasets/matbench_glass.csv
+matbench_datasets/matbench_steels.csv
