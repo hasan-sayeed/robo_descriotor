@@ -2,3 +2,4 @@ log_test/**/*
 matbench_datasets/matbench_*_structures.pkl
 matbench_datasets/matbench_*_robocrys_features.pkl
 matbench_datasets/matbench_*_robocrys_features.csv
+training/secrets.json
