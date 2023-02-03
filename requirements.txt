@@ -9,3 +9,4 @@ pymatgen==2022.11.7
 robocrys==0.2.7
 xgboost==0.80
 submitit
+requests
