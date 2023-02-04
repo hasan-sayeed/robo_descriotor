@@ -10,3 +10,4 @@ matbench_datasets/matbench_glass.csv
 matbench_datasets/matbench_steels.csv
 matbench_datasets/jobs/robofeat_jobs.pkl
 matbench_datasets/jobs/robofeat_results.pkl
+matbench_datasets/robofeat.csv
