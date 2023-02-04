@@ -8,3 +8,5 @@ matbench_datasets/jobs/*_robofeat_results.pkl
 matbench_datasets/matbench_expt_is_metal.csv
 matbench_datasets/matbench_glass.csv
 matbench_datasets/matbench_steels.csv
+matbench_datasets/jobs/robofeat_jobs.pkl
+matbench_datasets/jobs/robofeat_results.pkl
