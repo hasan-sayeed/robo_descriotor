@@ -8,3 +8,6 @@ robocrys==0.2.7
 xgboost==0.80
 submitit
 requests
+ray
+dill
+pymongo
