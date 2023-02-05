@@ -26,6 +26,10 @@ posts = collection.find({"cif": {"$exists": True}})
 results = [post for post in tqdm(posts)]
 
 df = pd.DataFrame(results)
+
+with open("matbench_datasets/robofeat.pkl", "wb") as f:
+    pickle.dump(df, f)
+
 df.to_csv("matbench_datasets/robofeat.csv")
 
 1 + 1
